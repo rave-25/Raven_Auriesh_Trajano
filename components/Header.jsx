@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import MobileNav from "./MobileNav";
 
 //components
 import Nav from "./Nav";
@@ -21,7 +22,9 @@ const Header = () => {
             <Button>Hire me</Button>
           </Link>
         </div>
-        <div className="xl:hidden">mobile nav</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
