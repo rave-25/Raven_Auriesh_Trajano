@@ -20,7 +20,7 @@ const MainPhoto = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-multiply absolute"
         >
           <Image
             src="/assets/rave.png"
@@ -42,7 +42,7 @@ const MainPhoto = () => {
             cx="253"
             cy="253"
             r="250"
-            stroke="#00ff99"
+            stroke="#eb6f46"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"

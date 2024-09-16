@@ -14,7 +14,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus",
+    "I'm a passionate problem solver who thrives on the challenges programming offers. Since moving out at 16 to pursue my studies in the city, I’ve embraced independence and personal growth. I love traveling and am dedicated to creating valuable projects that make a difference. My journey reflects a commitment to continuous learning and a drive to turn challenges into opportunities for growth.",
   info: [
     {
       fieldName: "Name",
@@ -55,7 +55,7 @@ const experience = {
   icon: "",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus",
+    "With 3 years of diverse web development experience, I specialize in both front-end and back-end tasks. My expertise extends to UI/UX design using Figma and Photoshop, business analysis including documentation and planning, and SEO strategies for enhancing online visibility. I blend technical skills with a strategic approach to deliver comprehensive digital solutions.",
   items: [
     {
       company: "Accenture",
@@ -84,7 +84,7 @@ const education = {
   icon: "",
   title: "My education",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus",
+    "I hold a Bachelor’s degree in Chemical Engineering, where I gained foundational knowledge in C++ programming and developed strong problem-solving and troubleshooting skills. My engineering background has equipped me with a scientific approach to resolving complex issues. Additionally, my career has been complemented by extensive in-depth training in every company I've worked with, further honing my technical expertise and adaptability.",
   items: [
     {
       institution: "Adamson University",
@@ -97,7 +97,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus",
+    "Over the years working in software companies, I’ve honed my skills in web development technologies, particularly the following:",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -158,15 +158,18 @@ const Resume = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mxauto">
+        <div>
+          <h1 className="text-[60px]">Why Hire Me?</h1>
+        </div>
         <Tabs
-          defaultValue="experience"
+          defaultValue="about"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+            <TabsTrigger value="about">About me</TabsTrigger>
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
           {/*content */}
           <div className="min-h-[70vh] w-full">
@@ -183,9 +186,11 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#e3c5e2] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
-                          <span className="text-accent">{item.duration}</span>
+                          <span className="text-accent font-extrabold">
+                            {item.duration}
+                          </span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.position}
                           </h3>
@@ -213,9 +218,11 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#e3c5e2] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
-                          <span className="text-accent">{item.duration}</span>
+                          <span className="text-accent font-extrabold">
+                            {item.duration}
+                          </span>
                           <h3 className="text-xl max-w-[300px] min-h-[60px] text-center lg:text-left">
                             {item.degree}
                           </h3>
@@ -245,7 +252,7 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-[150px] bg-[#e3c5e2] rounded-xl flex justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
