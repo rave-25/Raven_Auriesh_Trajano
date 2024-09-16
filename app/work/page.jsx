@@ -23,9 +23,9 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    title: "Yamato Landing Page",
+    description:  "I developed a landing page using pure HTML, CSS, and JavaScript, focusing on <span class='highlight'>traditional coding best practices</span>. The page features a dynamic sliding picture gallery implemented with JavaScript, and it is fully optimized for both mobile and web views, ensuring a seamless user experience across devices.",
+    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
     live: "https://rave-25.github.io/Company-1-Landing-Page/",
     github: "https://github.com/rave-25/Company-1-Landing-Page",
@@ -33,9 +33,9 @@ const projects = [
   {
     num: "02",
     category: "frontend",
-    title: "project 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }],
+    title: "Rakuten Landing Page",
+    description: "Another example of using vanilla HTML and CSS to fully grasp fundamental concepts in front-end programming.",
+    stack: [{ name: "Html" }, { name: "Css" }],
     image: "/assets/work/thumb2.png",
     live: "https://rave-25.github.io/Company-2-Landing-Page/",
     github: "https://github.com/rave-25/Company-2-Landing-Page",
@@ -43,8 +43,8 @@ const projects = [
   {
     num: "03",
     category: "backend",
-    title: "project 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+    title: "Binance Investing Dashboard",
+    description: "The project is about <span class='highlight'>a one-stop app for all your investing needs</span>. This app connects to the Binance personal API to summarize the necessary details for observing investment actions and determining whether each coin is gaining or losing. It saves data in its own database and uses machine learning to forecast future values, helping users set take-profit and stop-loss points.",
     stack: [{ name: "Python 3" }, { name: "Django" }],
     image: "/assets/work/thumb3.png",
     live: "",
@@ -53,8 +53,8 @@ const projects = [
   {
     num: "04",
     category: "frontend",
-    title: "project 4",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+    title: "Pomodoro App",
+    description: "A React.js app that allows users to set their focus time, short break, and long break durations in minutes. Users can also add items to their to-do list and set focus time for each item on the list.",
     stack: [{ name: "React Js" }, { name: "Material Ui" }],
     image: "/assets/work/thumb4.png",
     live: "",
@@ -81,9 +81,11 @@ const Work = () => {
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
+        <p className="text-white  text-2xl mb-20 text-center">Here are some personal projects I've worked on during my free time.</p>
+
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
+            <div className="flex flex-col gap-[25px] h-[50%]">
               {/*outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
@@ -92,8 +94,10 @@ const Work = () => {
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
+              {/*project title */}
+              <p className="text-white/60 text-[22px] font-medium">{project.title}</p>
               {/*project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60" dangerouslySetInnerHTML={{ __html: project.description }}></p>
               {/*stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
@@ -111,7 +115,7 @@ const Work = () => {
               {/*buttons */}
               <div className="flex items-center gap-4">
                 {/*live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -124,7 +128,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/*github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

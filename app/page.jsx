@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
+import Link from "next/link";
+
 //components
 import Socials from "@/components/Socials";
 import MainPhoto from "@/components/MainPhoto";
@@ -16,23 +18,28 @@ const Home = () => {
             <span className="text-xl">Software developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
-              <span className="text-accent">Raven Auriesh Trajano</span>
+              <span className="text-accent">Raven Auriesh Reyes-Trajano</span>
             </h1>
             <div className="items-center">
               <p className="max-w-[500px] mb-9 md:mx-auto sm:mx-auto lg:ml-0 text-white/80">
-                I excel at crafting elegant digital experiences and I'm
-                proficient in various programming languages and technoloies.
+                I specialize in designing captivating digital experiences,
+                combining creativity with technical expertise. With proficiency
+                across a wide range of programming languages and cutting-edge
+                technologies, I bring ideas to life with precision and
+                innovation.
               </p>
             </div>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href="./assets/RavenReyes_Resume.pdf" target="_blank">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
