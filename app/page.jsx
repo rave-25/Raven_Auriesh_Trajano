@@ -18,15 +18,17 @@ const Home = () => {
             <span className="text-xl">Software developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
-              <span className="text-accent">Raven Auriesh Reyes-Trajano</span>
+              <span className="text-accent">Raven Auriesh</span>
             </h1>
             <div className="items-center">
               <p className="max-w-[500px] mb-9 md:mx-auto sm:mx-auto lg:ml-0 text-white/80">
-                I specialize in designing captivating digital experiences,
-                combining creativity with technical expertise. With proficiency
-                across a wide range of programming languages and cutting-edge
-                technologies, I bring ideas to life with precision and
-                innovation.
+                Welcome to my portfolio! I specialize in crafting clean,
+                user-friendly web interfaces using HTML, CSS, JavaScript, and
+                React. With a solid understanding of both front-end and back-end
+                development, I collaborate closely with teams to build
+                functional, well-rounded applications. I’m passionate about
+                creating meaningful digital experiences and always eager to
+                learn and grow in the process.
               </p>
             </div>
             <div className="flex flex-col xl:flex-row items-center gap-8">

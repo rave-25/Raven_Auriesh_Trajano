@@ -10,7 +10,7 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "With over 3 years of experience in web development, I offer comprehensive solutions as both a front-end and back-end developer. Whether you need a visually striking interface or robust, scalable backend architecture, I have the expertise to handle full-stack development tasks. My well-rounded skill set ensures seamless collaboration across the entire development process, bringing your digital projects to life with efficiency and precision.",
+      "With 3+ years of experience in web development, I’ve built a strong skill set in both front-end and back-end development. My focus is on designing intuitive, visually appealing user experiences while ensuring the back-end is robust and efficient. I’m always eager to take on new challenges and grow my expertise. Collaborative by nature, I’m dedicated to delivering high-quality digital solutions and continuously refining my approach to stay adaptable in an ever-evolving field.",
     href: "",
   },
   {
